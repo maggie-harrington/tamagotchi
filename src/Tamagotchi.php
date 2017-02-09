@@ -54,7 +54,10 @@ class Tamagotchi
         return $this->sleep;
     }
 
-
+    function save()
+    {
+        array_push($_SESSION['tamagotchi_array'], $this);
+    }
 
     function foodButton()
     {
