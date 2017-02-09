@@ -85,6 +85,7 @@ class Tamagotchi
         } else {
             return false;
             //dead
+            $_SESSION['tamagotchi_array'] = array();
         }
     }
 
